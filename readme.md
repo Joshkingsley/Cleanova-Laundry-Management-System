@@ -33,46 +33,11 @@
 Every order in Cleanova follows one clear path, from the moment a customer hands over their laundry to the moment they leave feedback. Customers always know where their clothes are, and staff always know what comes next.
 
 ```
- ___________________
-|   Order placed    |
-|___________________|
-          |
-          v
- ___________________
-|   Tracking code   |
-|___________________|
-          |
-          v
- ___________________
-| Received & weighed|
-|___________________|
-          |
-          v
- ___________________
-|Washing & packaging|
-|___________________|
-          |
-          v
- ___________________
-|       Ready       |
-|___________________|
-          |
-          v
- ___________________
-|   M-Pesa payment  |
-|___________________|
-          |
-          v
- ___________________
-|Invoice and receipt|
-|___________________|
-          |
-          v
- ___________________
-|     Feedback      |
-|___________________|
+Order placed ---> Tracking code ---> Received and weighed ---> Washing and packaging
+                                                                        |
+                                                                        v
+Feedback <--- Invoice and receipt <--- M-Pesa payment <--- Ready <------
 ```
-
 
 | Step | What the customer sees | What happens behind the scenes |
 |---|---|---|
