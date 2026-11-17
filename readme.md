@@ -148,9 +148,6 @@ Payment handling is designed to feel clear for staff and professional for custom
 
 ## Gallery
 
-Place showcase images inside the repository’s `images/` directory.
-
-```html
 <section id="gallery">
   <h2>Product gallery</h2>
 
