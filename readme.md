@@ -1,4 +1,4 @@
-# Cleanova
+# Cleannova
 
 <p align="center">
   <img src="./images/hero.png" alt="Cleanova laundry operations platform" width="100%" />
