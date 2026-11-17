@@ -32,16 +32,47 @@
 
 Every order in Cleanova follows one clear path, from the moment a customer hands over their laundry to the moment they leave feedback. Customers always know where their clothes are, and staff always know what comes next.
 
-```mermaid
-flowchart LR
-    A[Order placed] --> B[Tracking code]
-    B --> C[Received and weighed]
-    C --> D[Washing and packaging]
-    D --> E[Ready]
-    E --> F[M-Pesa payment]
-    F --> G[Invoice and receipt]
-    G --> H[Feedback]
 ```
+ ___________________
+|   Order placed    |
+|___________________|
+          |
+          v
+ ___________________
+|   Tracking code   |
+|___________________|
+          |
+          v
+ ___________________
+| Received & weighed|
+|___________________|
+          |
+          v
+ ___________________
+|Washing & packaging|
+|___________________|
+          |
+          v
+ ___________________
+|       Ready       |
+|___________________|
+          |
+          v
+ ___________________
+|   M-Pesa payment  |
+|___________________|
+          |
+          v
+ ___________________
+|Invoice and receipt|
+|___________________|
+          |
+          v
+ ___________________
+|     Feedback      |
+|___________________|
+```
+
 
 | Step | What the customer sees | What happens behind the scenes |
 |---|---|---|
