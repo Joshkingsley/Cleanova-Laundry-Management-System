@@ -32,7 +32,6 @@
 
 Every order in Cleanova follows one clear path, from the moment a customer hands over their laundry to the moment they leave feedback. Customers always know where their clothes are, and staff always know what comes next.
 
-```mermaid
 flowchart LR
     A["1. Place order<br/>online or in shop"] --> B["2. Get a private<br/>tracking code"]
     B --> C["3. Items received<br/>and weighed"]
@@ -41,7 +40,6 @@ flowchart LR
     E --> F["6. Pay with an<br/>M-Pesa prompt"]
     F --> G["7. Invoice and receipt<br/>sent"]
     G --> H["8. Rate the<br/>experience"]
-```
 
 | Step | What the customer sees | What happens behind the scenes |
 |---|---|---|
