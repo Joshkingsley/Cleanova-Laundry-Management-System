@@ -11,6 +11,8 @@
 <p align="center">
   <a href="https://www.cleannovalaundry.co.ke">Website</a>
   ·
+  <a href="#the-customer-journey">Customer Journey</a>
+  ·
   <a href="#features">Features</a>
   ·
   <a href="#gallery">Gallery</a>
@@ -26,15 +28,41 @@
 
 ---
 
+## The customer journey
+
+Every order in Cleanova follows one clear path, from the moment a customer hands over their laundry to the moment they leave feedback. Customers always know where their clothes are, and staff always know what comes next.
+
+```mermaid
+flowchart LR
+    A["1. Place order<br/>online or in shop"] --> B["2. Get a private<br/>tracking code"]
+    B --> C["3. Items received<br/>and weighed"]
+    C --> D["4. Washing and<br/>packaging"]
+    D --> E["5. Ready for pickup<br/>or delivery"]
+    E --> F["6. Pay with an<br/>M-Pesa prompt"]
+    F --> G["7. Invoice and receipt<br/>sent"]
+    G --> H["8. Rate the<br/>experience"]
+```
+
+| Step | What the customer sees | What happens behind the scenes |
+|---|---|---|
+| **1. Order** | Submits an order online or hands items to an attendant, picking a service and a branch. | The order appears instantly on the branch dashboard. |
+| **2. Track** | Receives a private tracking code and can look up progress at any time. | The code is stored as a secure hash, never as plaintext. |
+| **3. Intake** | Gets a confirmation that the items were received. | Staff weigh the items and record the order details. |
+| **4. Processing** | Sees the status move through washing and packaging. | The team updates progress, and each change is logged. |
+| **5. Ready** | Is told the laundry is ready for pickup or out for delivery. | Riders are assigned per branch where delivery is needed. |
+| **6. Payment** | Receives an M-Pesa prompt and approves it on their phone. | The system polls for the result and shows a clear confirmation. |
+| **7. Documents** | Gets a numbered invoice and receipt, by WhatsApp or as a PDF. | Every download is recorded per user for audit. |
+| **8. Feedback** | Leaves a star rating and a short comment. | Owners see the feedback alongside branch performance. |
+
+---
+
 ## About Cleanova
 
 Cleanova is a laundry operations platform for businesses that have outgrown spreadsheets, notebooks, and generic point-of-sale systems. It supports the daily reality of a growing laundry: customers dropping off clothes, online pickup requests, washing and packaging, payment follow-up, receipts, branch management, delivery coordination, running costs, and owner oversight.
 
 The platform was built with a practical goal. Staff get tools that let them work quickly, and owners get visibility and approval control over the actions that matter. Instead of forcing a laundry into a heavy corporate hierarchy, Cleanova is organised around the people who actually run the shop. Owners oversee branches, staff, approvals, expenses, and performance. Shop managers coordinate daily orders, customer handovers, washing, and delivery readiness. Laundry staff work through their assigned tasks, and customers can place orders, track progress, receive updates, and leave feedback.
 
-## Built for real laundry operations
-
-Cleanova works for a single shop or a business with several branches. A typical order starts when a customer submits it online or hands items to an attendant. The team then receives, weighs, processes, and prepares the laundry while the customer is kept informed about payment, status, and delivery. Once payment is confirmed, staff issue the invoice and receipt, and owners can review activity, expenses, and approvals at any time. The aim is to reduce manual follow-up while keeping the business firmly in control.
+Cleanova works for a single shop or a business with several branches. The aim throughout is to reduce manual follow-up while keeping the business firmly in control.
 
 ## Features
 
@@ -66,31 +94,27 @@ Payment handling is designed to feel clear for staff and professional for custom
 
 <table align="center">
   <tr>
-    <td align="center" width="50%">
+    <td width="50%" valign="top" align="center">
       <img src="./images/dashboard.png" alt="Cleanova operations dashboard" width="380" />
       <br />
       <strong>Operations dashboard</strong>
       <br />
       <sub>A focused workspace for orders, customers, payments, and expenses.</sub>
-    </td>
-    <td align="center" width="50%">
-      <img src="./images/payment-receipt.png" alt="Cleanova payment and receipt workflow" width="380" />
-      <br />
-      <strong>Payment and receipts</strong>
-      <br />
-      <sub>Prompt for payment, confirm it, preview receipts, and send or download PDFs.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
+      <br /><br />
       <img src="./images/admin-panel.png" alt="Cleanova Django admin panel" width="380" />
       <br />
       <strong>Business administration</strong>
       <br />
       <sub>A trusted internal workspace for authorised data management.</sub>
     </td>
-    <td align="center" width="50%">
-      <img src="./images/mobile-dashboard.png" alt="Cleanova mobile dashboard" width="380" />
+    <td width="50%" valign="top" align="center">
+      <img src="./images/payment-receipt.png" alt="Cleanova payment and receipt workflow" width="380" />
+      <br />
+      <strong>Payment and receipts</strong>
+      <br />
+      <sub>Prompt for payment, confirm it, preview receipts, and send or download PDFs.</sub>
+      <br /><br />
+      <img src="./images/mobile-dashboard.png" alt="Cleanova mobile dashboard" width="260" />
       <br />
       <strong>Mobile management</strong>
       <br />
